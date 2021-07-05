@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
 import HomeScreen from "../Components/HomeScreen";
+import About from "../Components/About";
 
 const Home = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -16,6 +17,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HomeScreen />
+      <About />
     </div>
   );
 };
