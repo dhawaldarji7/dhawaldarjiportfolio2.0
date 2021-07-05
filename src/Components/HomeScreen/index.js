@@ -37,9 +37,7 @@ const HomeScreen = () => {
         </SecondaryText>
 
         <Description>Based in Dover, NH</Description>
-        <Description>
-          I code, sing, play guitar and consume chai!☕❤️
-        </Description>
+        <Description>I code, sing, play guitar and consume chai!☕</Description>
 
         <SocialIcons>
           <SocialIcon>

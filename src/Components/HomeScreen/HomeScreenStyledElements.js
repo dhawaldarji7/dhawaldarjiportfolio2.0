@@ -8,7 +8,6 @@ export const HomeScreenContainer = styled.div`
   padding: 0 30px;
   height: 100vh;
   position: relative;
-  top: -60px;
   z-index: 1;
 `;
 
