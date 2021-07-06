@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import { FaBars } from "react-icons/fa";
 
 export const Nav = styled.nav`
   background: ${({ NavScroll }) => (NavScroll ? "black" : "transparent")};
@@ -41,6 +42,7 @@ export const NavLogo = styled(LinkR)`
 
   &:hover {
     color: antiquewhite;
+    transform: scale(1.05);
   }
 `;
 
@@ -57,9 +59,12 @@ export const NavMobile = styled.div`
     cursor: pointer;
     color: white;
   }
+`;
 
+export const BurgerMenu = styled(FaBars)`
   &:hover {
     color: antiquewhite;
+    transform: scale(1.05);
   }
 `;
 

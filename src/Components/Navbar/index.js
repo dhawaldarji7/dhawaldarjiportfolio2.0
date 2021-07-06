@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { FaBars } from "react-icons/fa";
+
 import { Nav, NavContainer, NavLogo } from "./NavbarStyledElements";
 import {
   NavMobile,
   NavItems,
   NavItem,
   NavItemLink,
+  BurgerMenu,
 } from "./NavbarStyledElements";
 import { animateScroll as scroll } from "react-scroll";
 
@@ -95,7 +96,7 @@ const Navbar = ({ toggle }) => {
           </NavItems>
 
           <NavMobile onClick={toggle}>
-            <FaBars />
+            <BurgerMenu />
           </NavMobile>
         </NavContainer>
       </Nav>

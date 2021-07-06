@@ -14,7 +14,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div onClick={isOpen && toggle}>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HomeScreen />

@@ -58,7 +58,7 @@ export const MainText = styled.h1`
 export const SecondaryText = styled.h4`
   color: white;
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 350;
   margin-bottom: 7px;
 
   @media screen and (max-width: 768px) {
@@ -67,11 +67,10 @@ export const SecondaryText = styled.h4`
 `;
 
 export const Description = styled.p`
-  color: white;
+  color: rgba(256, 256, 256, 0.7);
   font-size: 20px;
-  font-weight: 250;
+  font-weight: 300;
   margin-bottom: 10px;
-  font-style: italic;
 
   @media screen and (max-width: 768px) {
     font-size: 15px;
@@ -84,6 +83,7 @@ export const SocialIcons = styled.ul`
   flex-direction: row;
   justify-content: space-between;
   width: 180px;
+  margin-top: 5px;
 `;
 
 export const SocialIcon = styled.li`

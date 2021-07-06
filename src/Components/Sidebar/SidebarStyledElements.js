@@ -7,21 +7,21 @@ const SidebarIconAnimation = keyframes`
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
   }
  `;
 
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
-  width: 75%;
-  height: 65%;
+  width: 60%;
+  height: 85%;
   background: rgba(0, 0, 0, 0.9);
   display: grid;
   align-items: center;
-  left: 25%;
+  left: 40%;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "60%")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  top: ${({ isOpen }) => (isOpen ? "1px" : "-100%")};
   border-radius: 5%;
 `;
 
@@ -30,6 +30,7 @@ export const CloseIcon = styled(FaTimes)`
 
   &:hover {
     color: antiquewhite;
+    transform: scale(1.1);
   }
 
   animation: ${({ isOpen }) => (isOpen ? SidebarIconAnimation : "none")};
@@ -54,11 +55,11 @@ export const SidebarWrapper = styled.div`
 export const SidebarItems = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 80px);
+  grid-template-rows: repeat(5, 80px);
   text-align: center;
 
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(4, 60px);
+    grid-template-rows: repeat(5, 60px);
   } ;
 `;
 

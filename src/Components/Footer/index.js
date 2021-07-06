@@ -8,6 +8,7 @@ import {
   SocialIconLink,
   Message,
   EasterEgg,
+  ArrowUp,
 } from "./FooterStyledElements";
 
 import { GoHeart } from "react-icons/go";
@@ -65,7 +66,6 @@ const Footer = () => {
         <Message></Message>
         <Message>by Dhawal</Message>
       </Copyright>
-
       <EasterEgg>
         <Message>You're awesome! Believe in yourself!</Message>
         <GoHeart />
