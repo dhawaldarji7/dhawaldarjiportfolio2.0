@@ -2,23 +2,12 @@ import styled, { keyframes } from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkS } from "react-scroll";
 
-const SidebarOpenAnimation = keyframes`
-
-  from {
-    margin-left: 100px;
-  }
-  to {
-    margin-left: 0px;
-  }
-
- `;
-
 const SidebarIconAnimation = keyframes`
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(90deg);
   }
  `;
 
@@ -34,9 +23,6 @@ export const SidebarContainer = styled.aside`
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "60%")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
   border-radius: 5%;
-
-  animation: ${({ isOpen }) => (isOpen ? SidebarOpenAnimation : "none")};
-  animation-duration: 0.8s;
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -47,7 +33,8 @@ export const CloseIcon = styled(FaTimes)`
   }
 
   animation: ${({ isOpen }) => (isOpen ? SidebarIconAnimation : "none")};
-  animation-duration: 0.8s;
+  animation-duration: 0.5s;
+  animation-delay: 0.6s;
 `;
 
 export const Icon = styled.div`
@@ -88,6 +75,7 @@ export const SidebarItemLink = styled(LinkS)`
 
   &:hover {
     color: antiquewhite;
+    transform: scale(1.1);
     transition: 0.3s all ease-in-out;
   }
 `;

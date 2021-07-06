@@ -35,6 +35,7 @@ const Navbar = ({ toggle }) => {
           <NavLogo to="/" onClick={goToHome}>
             Dhawal Darji
           </NavLogo>
+
           <NavItems>
             <NavItem>
               <NavItemLink

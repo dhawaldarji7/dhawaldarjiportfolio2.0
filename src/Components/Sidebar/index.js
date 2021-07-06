@@ -8,33 +8,43 @@ import {
   SidebarItemLink,
 } from "./SidebarStyledElements";
 
+import Slide from "@material-ui/core/Slide";
+
 const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClick={toggle}>
-        <CloseIcon isOpen={isOpen} />
-      </Icon>
+    <Slide direction="left" in={isOpen} timeout={1000}>
+      <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <Icon onClick={toggle}>
+          <CloseIcon isOpen={isOpen} />
+        </Icon>
 
-      <SidebarWrapper>
-        <SidebarItems>
-          <SidebarItemLink
-            to="about"
-            onClick={toggle}
-            smooth={true}
-            duration={700}
-            spy={true}
-            exact="true"
-            offset={-60}
-            activeClass="active"
-          >
-            About
-          </SidebarItemLink>
-          <SidebarItemLink to="background">Background</SidebarItemLink>
-          <SidebarItemLink to="projects">Projects</SidebarItemLink>
-          <SidebarItemLink to="contact">Contact</SidebarItemLink>
-        </SidebarItems>
-      </SidebarWrapper>
-    </SidebarContainer>
+        <SidebarWrapper>
+          <SidebarItems>
+            <SidebarItemLink
+              to="about"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={-60}
+              activeClass="active"
+            >
+              <span>About</span>
+            </SidebarItemLink>
+            <SidebarItemLink to="background">
+              <span> Background</span>
+            </SidebarItemLink>
+            <SidebarItemLink to="projects">
+              <span>Projects</span>
+            </SidebarItemLink>
+            <SidebarItemLink to="contact">
+              <span>Contact</span>
+            </SidebarItemLink>
+          </SidebarItems>
+        </SidebarWrapper>
+      </SidebarContainer>
+    </Slide>
   );
 };
 
