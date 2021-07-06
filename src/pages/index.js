@@ -19,6 +19,8 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HomeScreen />
       <About />
+      <About />
+      <About />
       <Footer />
     </div>
   );

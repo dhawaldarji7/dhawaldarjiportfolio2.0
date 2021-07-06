@@ -12,12 +12,23 @@ const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
-        <CloseIcon />
+        <CloseIcon isOpen={isOpen} />
       </Icon>
 
       <SidebarWrapper>
         <SidebarItems>
-          <SidebarItemLink to="about">About</SidebarItemLink>
+          <SidebarItemLink
+            to="about"
+            onClick={toggle}
+            smooth={true}
+            duration={700}
+            spy={true}
+            exact="true"
+            offset={-60}
+            activeClass="active"
+          >
+            About
+          </SidebarItemLink>
           <SidebarItemLink to="background">Background</SidebarItemLink>
           <SidebarItemLink to="projects">Projects</SidebarItemLink>
           <SidebarItemLink to="contact">Contact</SidebarItemLink>

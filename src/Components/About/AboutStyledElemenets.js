@@ -11,9 +11,10 @@ export const AboutContainer = styled.div`
   padding-bottom: 100px;
   overflow: hidden;
   width: 100%;
-  height: max-content;
+  height: fit-content;
   margin: 0 auto;
   object-fit: contain;
+  top: -5;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

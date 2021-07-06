@@ -1,29 +1,59 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkS } from "react-scroll";
+
+const SidebarOpenAnimation = keyframes`
+
+  from {
+    margin-left: 100px;
+  }
+  to {
+    margin-left: 0px;
+  }
+
+ `;
+
+const SidebarIconAnimation = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+ `;
 
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
-  width: 100%;
-  height: 100%;
-  background: #0d0d0d;
+  width: 75%;
+  height: 65%;
+  background: rgba(0, 0, 0, 0.9);
   display: grid;
   align-items: center;
-  left: 0;
-  transition: 0.3s all ease-in-out;
+  left: 25%;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "60%")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  border-radius: 5%;
+
+  animation: ${({ isOpen }) => (isOpen ? SidebarOpenAnimation : "none")};
+  animation-duration: 0.8s;
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: skyblue;
+  color: white;
+
+  &:hover {
+    color: antiquewhite;
+  }
+
+  animation: ${({ isOpen }) => (isOpen ? SidebarIconAnimation : "none")};
+  animation-duration: 0.8s;
 `;
 
 export const Icon = styled.div`
   position: absolute;
-  top: 1.2rem;
-  right: 1.5rem;
+  top: 0.8rem;
+  right: 1.7rem;
   background: transparent;
   font-size: 2rem;
   cursor: pointer;
@@ -37,11 +67,11 @@ export const SidebarWrapper = styled.div`
 export const SidebarItems = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 80px);
+  grid-template-rows: repeat(4, 80px);
   text-align: center;
 
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(5, 60px);
+    grid-template-rows: repeat(4, 60px);
   } ;
 `;
 
@@ -49,15 +79,15 @@ export const SidebarItemLink = styled(LinkS)`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-decoration: none;
   list-style: none;
   transition: 0.3s ease-in-out;
-  color: skyblue;
+  color: white;
   cursor: pointer;
 
   &:hover {
-    color: aqua;
+    color: antiquewhite;
     transition: 0.3s all ease-in-out;
   }
 `;

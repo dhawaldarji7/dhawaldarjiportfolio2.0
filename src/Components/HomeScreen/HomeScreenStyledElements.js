@@ -6,7 +6,7 @@ export const HomeScreenContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 100vh;
+  height: 101vh;
   position: relative;
   z-index: 1;
 `;
