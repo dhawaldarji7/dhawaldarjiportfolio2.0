@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Heading as H } from "../Background/BackgroundStyledElements";
+import { FaHome, FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export const ContactContainer = styled.div`
   display: flex;
@@ -12,13 +14,10 @@ export const ContactContainer = styled.div`
   padding-top: 30px;
   user-select: none;
   padding-bottom: 30px;
-  border: 2px solid black;
 `;
 
 export const Heading = styled(H)`
   text-decoration: none;
-  border: none;
-  border: 2px solid black;
 `;
 
 export const ContactGrid = styled.div`
@@ -28,6 +27,8 @@ export const ContactGrid = styled.div`
   grid-template-rows: 80%;
   height: 700px;
   width: 70%;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 640px) {
     grid-template-columns: 1fr;
@@ -38,12 +39,8 @@ export const ContactGrid = styled.div`
 
 export const ContactForm = styled.div`
   padding: 10px 10px;
-  border: 2px solid black;
-  height: auto;
-`;
 
-export const ContactDetails = styled.div`
-  border: 2px solid black;
+  height: auto;
 `;
 
 export const Form = styled.form`
@@ -112,4 +109,44 @@ export const Button = styled.button`
     transform: scale(1.05);
     transition: 0.1s all ease-in;
   }
+`;
+
+export const ContactDetails = styled.div`
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Details = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  span {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+`;
+
+export const Address = styled(FaHome)`
+  margin-top: 3px;
+  margin-right: 10px;
+`;
+
+export const Phone = styled(FaPhoneAlt)`
+  margin-top: 3px;
+  margin-right: 10px;
+  font-size: small;
+`;
+
+export const Email = styled(MdEmail)`
+  margin-top: 3px;
+  margin-right: 10px;
+`;
+
+export const ContactDetail = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;

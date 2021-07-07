@@ -8,6 +8,11 @@ import {
   Form,
   Field,
   Button,
+  Details,
+  Address,
+  Phone,
+  ContactDetail,
+  Email,
 } from "./ContactStyledElements";
 
 const Contact = () => {
@@ -19,12 +24,17 @@ const Contact = () => {
         <ContactForm>
           <Form>
             <Field>
-              <label htmlFor="Name">Name</label>
+              <label htmlFor="Name">
+                Name
+                <span>*</span>
+              </label>
               <input type="text" placeholder="What can I call you?" />
             </Field>
 
             <Field>
-              <label htmlFor="">Email</label>
+              <label htmlFor="">
+                Email<span>*</span>
+              </label>
               <input type="text" placeholder="Where can I reach you?" />
             </Field>
 
@@ -34,7 +44,9 @@ const Contact = () => {
             </Field>
 
             <Field>
-              <label htmlFor="Name">Message</label>
+              <label htmlFor="Name">
+                Message<span>*</span>
+              </label>
               <textarea
                 type="text"
                 placeholder="Type your message here"
@@ -50,7 +62,26 @@ const Contact = () => {
             </Field>
           </Form>
         </ContactForm>
-        <ContactDetails></ContactDetails>
+        <ContactDetails>
+          <span style={{ "font-weight": "500" }}>Contact Details</span>
+          <Details>
+            <span>Dhawal Darji</span>
+
+            <ContactDetail>
+              <Address />
+              <span>Dover, NH</span>
+            </ContactDetail>
+            <ContactDetail>
+              <Phone />
+              <span>+1 (603)-205-9043</span>
+            </ContactDetail>
+
+            <ContactDetail>
+              <Email />
+              <span>dhawal.d7@gmail.com</span>
+            </ContactDetail>
+          </Details>
+        </ContactDetails>
       </ContactGrid>
     </ContactContainer>
   );
