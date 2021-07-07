@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { Heading as H } from "../About/AboutStyledElemenets";
 
 export const BackgroundContainer = styled.div`
-  height: auto;
   background: #7d84b2;
   padding-top: 30px;
   user-select: none;
   padding-bottom: 30px;
+  width: 100%;
 `;
 
 export const BackgroundContent = styled.div`
@@ -34,7 +34,6 @@ export const Item = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
-  width: fit-content;
 `;
 
 export const ItemWrapper = styled.div`
