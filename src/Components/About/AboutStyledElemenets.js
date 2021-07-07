@@ -15,6 +15,7 @@ export const AboutContainer = styled.div`
   margin: 0 auto;
   object-fit: contain;
   top: -5;
+  user-select: none;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
