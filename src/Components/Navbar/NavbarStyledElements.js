@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 
@@ -30,7 +29,7 @@ export const NavContainer = styled.div`
   padding: 0 24px;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkS)`
   color: black;
   cursor: pointer;
   color: white;

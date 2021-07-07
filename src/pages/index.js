@@ -4,6 +4,9 @@ import Sidebar from "../Components/Sidebar";
 import HomeScreen from "../Components/HomeScreen";
 import About from "../Components/About";
 import Footer from "../Components/Footer";
+import Background from "../Components/Background";
+import Projects from "../Components/Projects";
+import Contact from "../Components/Contact";
 
 const Home = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -19,8 +22,9 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HomeScreen />
       <About />
-      <About />
-      <About />
+      <Background />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );

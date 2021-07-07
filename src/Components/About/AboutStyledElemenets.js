@@ -6,7 +6,7 @@ export const AboutContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: #7fa8af;
+  background: #8aa399;
   padding-top: 100px;
   padding-bottom: 100px;
   overflow: hidden;
@@ -27,6 +27,7 @@ export const AboutImage = styled.img`
   height: 220px;
   border-radius: 25%;
   margin-right: 20px;
+  box-shadow: 0px 0px 10px 1px black;
 
   @media screen and (max-width: 768px) {
     margin-bottom: 20px;
@@ -72,8 +73,9 @@ export const DownloadIcon = styled(HiDownload)`
 `;
 
 export const DownloadButton = styled.button`
-  color: white;
-  background: black;
+  color: #8aa399;
+  font-weight: 500;
+  background: #0d0d0d;
   display: flex;
   padding: 10px 20px;
   border: none;
@@ -84,11 +86,12 @@ export const DownloadButton = styled.button`
   font-size: 16px;
   align-items: center;
   position: relative;
+  border: 2px solid black;
 
   &:hover {
-    background: skyblue;
-    transition: 0.3s all ease-in;
-    transform: scale(1.03);
+    background: #8aa399;
+    transform: scale(1.05);
+    transition: 0.1s all ease-in;
     color: black;
   }
 `;

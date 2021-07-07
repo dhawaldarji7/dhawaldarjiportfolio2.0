@@ -35,6 +35,7 @@ export const HomeScreenContent = styled.div`
   max-width: 1200px;
   position: absolute;
   display: flex;
+  width: 50%;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -43,15 +44,19 @@ export const HomeScreenContent = styled.div`
   border-radius: 5%;
   top: 25vh;
   padding: 20px 10px 20px 10px;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const MainText = styled.h1`
   color: white;
-  font-size: 48px;
+  font-size: 56px;
   text-align: center;
 
-  @media screen and (max-width: 768px) {
-    font-size: 34px;
+  @media screen and (max-width: 512px) {
+    font-size: 32px;
   }
 `;
 
@@ -61,8 +66,8 @@ export const SecondaryText = styled.h4`
   font-weight: 350;
   margin-bottom: 7px;
 
-  @media screen and (max-width: 768px) {
-    font-size: 18px;
+  @media screen and (max-width: 512px) {
+    font-size: 16px;
   }
 `;
 
@@ -72,8 +77,8 @@ export const Description = styled.p`
   font-weight: 300;
   margin-bottom: 10px;
 
-  @media screen and (max-width: 768px) {
-    font-size: 15px;
+  @media screen and (max-width: 512px) {
+    font-size: 14px;
   }
 `;
 
@@ -110,7 +115,7 @@ export const SocialIconLink = styled.a`
     color: white;
   }
   &:hover {
-    color: aquamarine;
-    transition: 0.3s all ease-in;
+    color: skyblue;
+    transition: 0.1s all ease-in;
   }
 `;

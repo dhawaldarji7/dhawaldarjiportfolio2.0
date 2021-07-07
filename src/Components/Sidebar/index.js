@@ -51,13 +51,40 @@ const Sidebar = ({ isOpen, toggle }) => {
             >
               <span>About</span>
             </SidebarItemLink>
-            <SidebarItemLink to="background">
+            <SidebarItemLink
+              to="background"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={-60}
+              activeClass="active"
+            >
               <span> Background</span>
             </SidebarItemLink>
-            <SidebarItemLink to="projects">
+            <SidebarItemLink
+              to="projects"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={-60}
+              activeClass="active"
+            >
               <span>Projects</span>
             </SidebarItemLink>
-            <SidebarItemLink to="contact">
+            <SidebarItemLink
+              to="contact"
+              onClick={toggle}
+              smooth={true}
+              duration={700}
+              spy={true}
+              exact="true"
+              offset={-60}
+              activeClass="active"
+            >
               <span>Contact</span>
             </SidebarItemLink>
           </SidebarItems>

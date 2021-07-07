@@ -1,6 +1,7 @@
 import React from "react";
 import video from "../../media/bg1.mp4";
 import TypeWriter from "react-typewriter";
+
 import { FaFacebook, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import {
   HomeScreenContainer,

@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { TiArrowUpThick as up } from "react-icons/ti";
+import { Link } from "react-scroll";
 
 export const FooterContainer = styled.div`
   display: flex;
@@ -7,17 +9,25 @@ export const FooterContainer = styled.div`
   color: white;
   align-items: center;
   justify-content: center;
-  padding-top: 35px;
-  padding-bottom: 10px;
-  height: 180px;
+  padding-bottom: 12px;
+  height: fit-content;
   width: 100%;
   color: #888888;
   user-select: none;
 `;
 
+export const FooterWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+`;
+
 export const SocialIcons = styled.ul`
   list-style: none;
   display: flex;
+  margin-top: 25px;
   flex-direction: row;
   justify-content: space-between;
   width: 180px;
@@ -47,8 +57,8 @@ export const SocialIconLink = styled.a`
     color: #707070;
   }
   &:hover {
-    color: aquamarine;
-    transition: 0.3s all ease-in;
+    color: #dbf4a7;
+    transition: 0.1s all ease-in;
   }
 `;
 
@@ -76,4 +86,23 @@ export const EasterEgg = styled.div`
 export const Message = styled.span`
   font-size: 14px;
   margin-right: 3px;
+`;
+
+export const ScrollUp = styled(Link)`
+  color: black;
+`;
+
+export const ArrowUp = styled(up)`
+  border: 1.5px solid black;
+  border-radius: 100%;
+  transform: scale(2.8);
+  margin-top: -7px;
+  padding: 1px 2px;
+  background: #dbf4a7;
+
+  &:hover {
+    transform: scale(3);
+    transition: 0.1s all ease-in-out;
+    cursor: pointer;
+  }
 `;

@@ -33,7 +33,16 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav NavScroll={NavScroll}>
         <NavContainer>
-          <NavLogo to="/" onClick={goToHome}>
+          <NavLogo
+            to="/"
+            onClick={goToHome}
+            smooth={true}
+            duration={700}
+            spy={true}
+            exact="true"
+            offset={-60}
+            activeClass="active"
+          >
             Dhawal Darji
           </NavLogo>
 
