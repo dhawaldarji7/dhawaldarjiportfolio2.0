@@ -13,6 +13,7 @@ export const FooterContainer = styled.div`
   height: fit-content;
   color: #888888;
   user-select: none;
+  width: 100%;
 `;
 
 export const FooterWrapper = styled.div`
@@ -72,9 +73,11 @@ export const Copyright = styled.div`
 export const EasterEgg = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 5px;
   font-size: 16px;
   color: rgba(0, 0, 0, 0);
+  width: 90vw;
 
   &:hover {
     color: rgba(250, 100, 100, 1);

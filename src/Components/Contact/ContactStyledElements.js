@@ -31,6 +31,7 @@ export const ContactGrid = styled.div`
   grid-template-columns: 2fr 1fr;
   grid-template-rows: fit-content;
   justify-content: center;
+  width: 60%;
 
   @media screen and (max-width: 640px) {
     grid-template-columns: 1fr;
@@ -123,7 +124,7 @@ export const Button = styled.button`
 `;
 
 export const ContactDetails = styled.div`
-  padding: 20px 20px;
+  padding: 10px 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -132,11 +133,11 @@ export const ContactDetails = styled.div`
   border: 3px solid black;
   border-radius: 15px;
   height: fit-content;
-  margin-top: 25%;
+  margin-top: 25px;
+  box-shadow: 0px 0px 5px #181818;
 
   @media screen and (max-width: 640px) {
-    margin-top: 0;
-
+    margin-top: 10px;
     justify-content: center;
     justify-self: center;
   }
