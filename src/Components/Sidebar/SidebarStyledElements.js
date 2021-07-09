@@ -1,15 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkS } from "react-scroll";
-
-const SidebarIconAnimation = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(180deg);
-  }
- `;
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -32,10 +23,6 @@ export const CloseIcon = styled(FaTimes)`
     color: antiquewhite;
     transform: scale(1.1);
   }
-
-  animation: ${({ isOpen }) => (isOpen ? SidebarIconAnimation : "none")};
-  animation-duration: 0.5s;
-  animation-delay: 0.6s;
 `;
 
 export const Icon = styled.div`

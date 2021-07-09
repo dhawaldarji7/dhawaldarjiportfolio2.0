@@ -32,19 +32,19 @@ const Contact = () => {
             </Field>
 
             <Field>
-              <label htmlFor="">
+              <label htmlFor="Email">
                 Email<span>*</span>
               </label>
               <input type="text" placeholder="Where can I reach you?" />
             </Field>
 
             <Field>
-              <label htmlFor="Name">Subject</label>
+              <label htmlFor="Subject">Subject</label>
               <input type="text" placeholder="What's this about?" />
             </Field>
 
             <Field>
-              <label htmlFor="Name">
+              <label htmlFor="Message">
                 Message<span>*</span>
               </label>
               <textarea
@@ -58,6 +58,7 @@ const Contact = () => {
             </Field>
 
             <Field>
+              <label htmlFor="SubmitButton"></label>
               <Button>Submit</Button>
             </Field>
           </Form>

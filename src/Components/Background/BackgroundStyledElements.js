@@ -14,11 +14,6 @@ export const BackgroundContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  @media screen and (max-width: 640px) {
-    align-items: center;
-    justify-content: center;
-  }
 `;
 
 export const Section = styled.div`
@@ -26,7 +21,6 @@ export const Section = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   padding-top: 40px;
-  margin-left: 5vw;
 `;
 
 export const Item = styled.div`

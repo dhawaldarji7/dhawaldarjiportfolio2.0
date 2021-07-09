@@ -11,7 +11,6 @@ export const FooterContainer = styled.div`
   justify-content: center;
   padding-bottom: 12px;
   height: fit-content;
-  width: 100%;
   color: #888888;
   user-select: none;
 `;

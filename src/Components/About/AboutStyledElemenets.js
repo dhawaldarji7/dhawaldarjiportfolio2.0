@@ -39,7 +39,7 @@ export const AboutImage = styled.img`
 export const AboutContent = styled.div`
   color: black;
   margin-left: 20px;
-  width: 100vmin;
+  width: 50%;
   align-items: center;
   justify-content: center;
 

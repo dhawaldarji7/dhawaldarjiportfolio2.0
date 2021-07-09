@@ -45,7 +45,6 @@ const Navbar = ({ toggle }) => {
           >
             Dhawal Darji
           </NavLogo>
-
           <NavItems>
             <NavItem>
               <NavItemLink

@@ -6,8 +6,9 @@ export const HomeScreenContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 101vh;
+  height: 800px;
   position: relative;
+
   z-index: 1;
 `;
 
@@ -17,7 +18,7 @@ export const HomeScreenBg = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
+
   height: 100%;
   overflow: hidden;
 `;

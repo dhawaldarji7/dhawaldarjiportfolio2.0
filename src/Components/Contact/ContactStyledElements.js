@@ -10,10 +10,15 @@ export const ContactContainer = styled.div`
   justify-content: center;
   background: #dbf4a7;
   user-select: none;
-  height: auto;
+  height: 700px;
+  width: 100%;
   padding-top: 30px;
   user-select: none;
   padding-bottom: 30px;
+
+  @media screen and (max-width: 640px) {
+    height: fit-content;
+  }
 `;
 
 export const Heading = styled(H)`
@@ -22,35 +27,35 @@ export const Heading = styled(H)`
 
 export const ContactGrid = styled.div`
   display: grid;
-
+  margin-top: 12px;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 80%;
-  height: 700px;
-  width: 70%;
+  grid-template-rows: fit-content;
   justify-content: center;
-  align-items: center;
 
   @media screen and (max-width: 640px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 75%;
+    grid-template-rows: fit-content;
     width: 80vw;
   }
 `;
 
 export const ContactForm = styled.div`
   padding: 10px 10px;
-
-  height: auto;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Form = styled.form`
   label {
-    margin: 10px 10px;
     color: black;
     display: inline-block;
     width: 100px;
     font-weight: 500;
     font-size: 16px;
+
+    @media screen and (max-width: 640px) {
+      text-align: center;
+    }
   }
 
   input,
@@ -91,6 +96,12 @@ export const Field = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Button = styled.button`
@@ -115,6 +126,20 @@ export const ContactDetails = styled.div`
   padding: 20px 20px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: fit-content;
+  border: 3px solid black;
+  border-radius: 15px;
+  height: fit-content;
+  margin-top: 25%;
+
+  @media screen and (max-width: 640px) {
+    margin-top: 0;
+
+    justify-content: center;
+    justify-self: center;
+  }
 `;
 
 export const Details = styled.div`
