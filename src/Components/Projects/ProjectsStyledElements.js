@@ -5,4 +5,5 @@ export const ProjectsContainer = styled.div`
   background: #8fa6cb;
   user-select: none;
   width: 100%;
+  height: 800px;
 `;
