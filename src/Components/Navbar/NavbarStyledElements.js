@@ -22,7 +22,7 @@ export const Nav = styled.nav`
 
 export const NavContainer = styled.div`
   display: flex;
-  height: 70px;
+
   z-index: 1;
   width: 100%;
   justify-content: space-between;
@@ -83,7 +83,7 @@ export const NavItems = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 60px;
+  height: 50px;
 `;
 
 export const NavItemLink = styled(LinkS)`
@@ -98,11 +98,10 @@ export const NavItemLink = styled(LinkS)`
   &.active {
     color: coral;
     border-bottom: 3px solid coral;
-    transition: 0.3s all ease-in-out;
   }
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: coral;
   }
 `;

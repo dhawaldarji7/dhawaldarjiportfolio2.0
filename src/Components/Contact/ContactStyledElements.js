@@ -10,7 +10,8 @@ export const ContactContainer = styled.div`
   justify-content: center;
   background: #dbf4a7;
   user-select: none;
-  height: 700px;
+  height: auto;
+
   width: 100%;
   padding-top: 30px;
   user-select: none;

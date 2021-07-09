@@ -7,6 +7,9 @@ export const BackgroundContainer = styled.div`
   user-select: none;
   padding-bottom: 30px;
   width: 100%;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #7d84b2;
 `;
 
 export const BackgroundContent = styled.div`

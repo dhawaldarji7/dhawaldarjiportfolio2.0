@@ -29,6 +29,9 @@ const Navbar = ({ toggle }) => {
     scroll.scrollToTop();
   };
 
+  const offset = -60;
+  const duration = 700;
+
   return (
     <>
       <Nav NavScroll={NavScroll}>
@@ -36,12 +39,11 @@ const Navbar = ({ toggle }) => {
           <NavLogo
             to="/"
             onClick={goToHome}
-            smooth={true}
-            duration={700}
+            smooth="easeOutQuad"
+            duration={duration}
             spy={true}
             exact="true"
-            offset={-60}
-            activeClass="active"
+            offset={offset}
           >
             Dhawal Darji
           </NavLogo>
@@ -50,11 +52,10 @@ const Navbar = ({ toggle }) => {
               <NavItemLink
                 to="about"
                 smooth={true}
-                duration={700}
+                duration={duration}
                 spy={true}
                 exact="true"
-                offset={-60}
-                activeClass="active"
+                offset={offset}
               >
                 About
               </NavItemLink>
@@ -64,11 +65,10 @@ const Navbar = ({ toggle }) => {
               <NavItemLink
                 to="background"
                 smooth={true}
-                duration={700}
+                duration={duration}
                 spy={true}
                 exact="true"
-                offset={-60}
-                activeClass="active"
+                offset={offset}
               >
                 Background
               </NavItemLink>
@@ -78,11 +78,10 @@ const Navbar = ({ toggle }) => {
               <NavItemLink
                 to="projects"
                 smooth={true}
-                duration={700}
+                duration={duration}
                 spy={true}
                 exact="true"
-                offset={-60}
-                activeClass="active"
+                offset={offset}
               >
                 Projects
               </NavItemLink>
@@ -92,11 +91,10 @@ const Navbar = ({ toggle }) => {
               <NavItemLink
                 to="contact"
                 smooth={true}
-                duration={700}
+                duration={duration}
                 spy={true}
                 exact="true"
-                offset={-60}
-                activeClass="active"
+                offset={offset}
               >
                 Contact
               </NavItemLink>
