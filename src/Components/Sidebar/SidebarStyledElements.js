@@ -63,7 +63,22 @@ export const SidebarItemLink = styled(LinkS)`
 
   &:hover {
     color: antiquewhite;
-    transform: scale(1.1);
+    transform: scale(0.95);
     transition: 0.3s all ease-in-out;
+  }
+
+  &:after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: antiquewhite;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 33px;
+    transition: 0.4s;
+  }
+
+  &:hover:after {
+    width: 20%;
   }
 `;

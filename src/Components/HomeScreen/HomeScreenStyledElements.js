@@ -42,7 +42,7 @@ export const HomeScreenContent = styled.div`
   justify-content: center;
   user-select: none;
   background-color: rgba(200, 200, 200, 0.2);
-  border-radius: 5%;
+  border-radius: 15px;
   top: 25vh;
   padding: 20px 10px 20px 10px;
 

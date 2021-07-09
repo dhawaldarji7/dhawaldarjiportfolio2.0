@@ -98,11 +98,11 @@ export const NavItemLink = styled(LinkS)`
   &.active {
     color: coral;
     border-bottom: 3px solid coral;
+    transition: 0.3s all ease-in-out;
   }
 
   &:hover {
     transform: scale(1.1);
     color: coral;
-    transition: 0.2s all ease-in-out;
   }
 `;
