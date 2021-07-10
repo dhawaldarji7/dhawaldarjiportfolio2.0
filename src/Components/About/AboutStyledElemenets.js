@@ -57,7 +57,6 @@ export const Heading = styled.h1`
   font-size: 25px;
   width: fit-content;
   font-weight: 500;
-  border-bottom: 2px solid;
 `;
 
 export const Bio = styled.p`

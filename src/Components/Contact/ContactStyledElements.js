@@ -11,11 +11,10 @@ export const ContactContainer = styled.div`
   background: #dbf4a7;
   user-select: none;
   height: auto;
-
   width: 100%;
-  padding-top: 30px;
+  padding-top: 50px;
   user-select: none;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 
   @media screen and (max-width: 640px) {
     height: fit-content;
