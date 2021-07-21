@@ -10,7 +10,7 @@ import {
 } from "./NavbarStyledElements";
 import { animateScroll as scroll } from "react-scroll";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, data }) => {
   const [NavScroll, setNavScroll] = useState(false);
 
   const navBgChange = () => {
@@ -32,6 +32,10 @@ const Navbar = ({ toggle }) => {
   const offset = -60;
   const duration = 700;
 
+  if (data) {
+    var name = data.name;
+  }
+
   return (
     <>
       <Nav NavScroll={NavScroll}>
@@ -45,7 +49,7 @@ const Navbar = ({ toggle }) => {
             exact="true"
             offset={offset}
           >
-            Dhawal Darji
+            {name ? `${name}` : null}
           </NavLogo>
           <NavItems>
             <NavItem>

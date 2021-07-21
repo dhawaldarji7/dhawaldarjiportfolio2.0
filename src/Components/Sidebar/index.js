@@ -61,7 +61,7 @@ const Sidebar = ({ isOpen, toggle }) => {
               offset={-60}
               activeClass="active"
             >
-              <span> Background</span>
+              <span>Background</span>
             </SidebarItemLink>
             <SidebarItemLink
               to="projects"

@@ -70,6 +70,7 @@ export const Form = styled.form`
     font-size: 14px;
     line-height: 14px;
     width: 300px;
+    border-radius: 12px;
   }
 
   input:focus,

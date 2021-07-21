@@ -16,7 +16,7 @@ export const ProjectsContainer = styled.div`
 export const ProjectsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 85%;
   align-items: center;
   justify-content: center;
 
@@ -24,6 +24,7 @@ export const ProjectsWrapper = styled.div`
     width: 98%;
   }
 `;
+
 export const Project = styled.div`
   display: flex;
   flex-direction: column;
@@ -34,21 +35,77 @@ export const Project = styled.div`
   background-color: white;
   margin: 15px;
   border-radius: 15px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+  }
+`;
+
+export const ProjectCarousel = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+
+  .rec.rec-arrow {
+    border: 2px solid black;
+    background-color: #8fa6cb;
+    color: black;
+  }
+
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
+
+  .rec.rec-arrow:hover,
+  .rec.rec-arrow:focus,
+  .rec.rec-arrow:active {
+    color: #fff;
+    background-color: #8fa6cb;
+    border-color: #fff;
+  }
+
+  .rec.rec-dot {
+    box-shadow: 0 0 1px 3px rgba(256, 256, 256, 0.7);
+  }
+
+  .rec.rec-dot:hover,
+  .rec.rec-dot:focus {
+    box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.7);
+  }
+
+  .rec.rec-dot.rec-dot_active {
+    background: black;
+  }
 `;
 
 export const Heading = styled(H)`
   margin-bottom: 30px;
 `;
 
-export const projectTitle = styled.h1`
-  font-size: 18px;
+export const ProjectTitle = styled.h1`
+  position: absolute;
+  top: 28px;
+  text-align: center;
+  font-size: 30px;
   color: black;
 `;
 
-export const projectDomain = styled.span`
-  font-size: 18px;
+export const ProjectDomain = styled.span`
+  position: absolute;
+  top: 20%;
+  font-size: 16px;
 `;
 
-export const projectDescription = styled.span`
-  font-size: 18px;
+export const ProjectDescription = styled.p`
+  text-align: center;
+  font-size: 20px;
+  width: 70%;
+
+  @media screen and (max-width: 640px) {
+    font-size: 18px;
+    width: 80%;
+  }
 `;

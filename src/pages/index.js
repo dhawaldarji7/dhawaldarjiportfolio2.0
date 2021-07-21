@@ -8,7 +8,7 @@ import Background from "../Components/Background";
 import Projects from "../Components/Projects";
 import Contact from "../Components/Contact";
 
-const Home = () => {
+const Home = ({ data }) => {
   const [isOpen, setisOpen] = useState(false);
   console.log(isOpen);
   const toggle = () => {
@@ -19,8 +19,8 @@ const Home = () => {
   return (
     <div onClick={isOpen && toggle}>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      <HomeScreen />
+      <Navbar toggle={toggle} data={data.intro} />
+      <HomeScreen data={data.intro} />
       <About />
       <Background />
       <Projects />

@@ -4,9 +4,10 @@ import {
   Project,
   ProjectsWrapper,
   Heading,
-  projectTitle,
-  projectDomain,
-  projectDescription,
+  ProjectTitle,
+  ProjectDomain,
+  ProjectDescription,
+  ProjectCarousel,
 } from "./ProjectsStyledElements";
 import Carousel from "react-elastic-carousel";
 
@@ -14,27 +15,33 @@ const Projects = () => {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-    { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 3 },
+    { width: 850, itemsToShow: 3, itemsToScroll: 1 },
+    { width: 1150, itemsToShow: 3, itemsToScroll: 3 },
+    { width: 1450, itemsToShow: 3, itemsToScroll: 3 },
+    { width: 1750, itemsToShow: 3, itemsToScroll: 3 },
   ];
 
   return (
     <ProjectsContainer id="projects">
       <ProjectsWrapper>
         <Heading>Few of my projects!</Heading>
-        <Carousel breakPoints={breakPoints}>
-          <Project>
-            <projectTitle>Hello</projectTitle>
-            <projectDomain>Hiii</projectDomain>
-            <projectDescription>skjfsj</projectDescription>
-          </Project>
-          <Project></Project>
-          <Project></Project>
-          <Project></Project>
-          <Project></Project>
-          <Project></Project>
-          <Project></Project>
-        </Carousel>
+        <ProjectCarousel>
+          <Carousel breakPoints={breakPoints}>
+            <Project id="0">
+              <ProjectTitle>Hello</ProjectTitle>
+              <ProjectDomain>Hiii</ProjectDomain>
+              <ProjectDescription>
+                skjfsjsd vnsfbsfj sdjfsbf skjdbs kdjfbd
+              </ProjectDescription>
+            </Project>
+            <Project id="1">A</Project>
+            <Project id="2">B</Project>
+            <Project id="3">C</Project>
+            <Project id="4">D</Project>
+            <Project id="5">E</Project>
+            <Project id="6">F</Project>
+          </Carousel>
+        </ProjectCarousel>
       </ProjectsWrapper>
     </ProjectsContainer>
   );

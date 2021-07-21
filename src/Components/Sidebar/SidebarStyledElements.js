@@ -74,11 +74,11 @@ export const SidebarItemLink = styled(LinkS)`
     background: antiquewhite;
     border-radius: 10px;
     position: absolute;
-    margin-top: 33px;
-    transition: 0.4s;
+    margin-top: 35px;
+    transition: 0.3s;
   }
 
   &:hover:after {
-    width: 20%;
+    width: 35px;
   }
 `;

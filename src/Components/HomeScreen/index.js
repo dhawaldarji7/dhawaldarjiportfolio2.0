@@ -16,7 +16,14 @@ import {
   SocialIconLink,
 } from "./HomeScreenStyledElements";
 
-const HomeScreen = () => {
+const HomeScreen = ({ data }) => {
+  if (data) {
+    var name = data.name;
+    var role = data.role;
+    var location = data.location;
+    var description = data.desc;
+  }
+
   return (
     <HomeScreenContainer id="home">
       <HomeScreenBg>
@@ -25,20 +32,18 @@ const HomeScreen = () => {
 
       <HomeScreenContent>
         <MainText>
-          I'm{" "}
           <TypeWriter typing={1} minDelay={100}>
-            Dhawal Darji
+            {name ? `I'm ${name}` : null}
           </TypeWriter>
         </MainText>
         <SecondaryText>
-          I'm a{" "}
           <TypeWriter typing={1} minDelay={100}>
-            FullStack Developer
+            {role ? `I'm a ${role}` : null}
           </TypeWriter>
         </SecondaryText>
 
-        <Description>Based in Dover, NH</Description>
-        <Description>I code, sing, play guitar and consume chai!☕</Description>
+        <Description>{location ? `Based in ${location}` : null}</Description>
+        <Description>{description ? `${description}` : null}</Description>
 
         <SocialIcons>
           <SocialIcon>
